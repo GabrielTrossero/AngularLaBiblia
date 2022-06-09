@@ -9,3 +9,7 @@ Comandos utilizados para en el proyecto
 
 - **ng new MiPrimeraApp** -> Generamos el proyecto
 - **ng serve -o** -> Corremos el proyecto y abrimos la pestaña en el navegador
+
+## Componentes
+
+- **ng generate component Saludo --skip-tests** -> Generar un componente y no crear los ficheros de testing
