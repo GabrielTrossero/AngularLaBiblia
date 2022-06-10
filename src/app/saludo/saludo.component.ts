@@ -14,7 +14,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SaludoComponent implements OnInit {
 
-  constructor() { }
+  mensaje: string; //Esta variable la puedo visualizar solo en saludo.component.html
+
+  constructor() { //Solo lo vamos a utilizar para inicializar variables
+    this.mensaje = 'Un saludo a todos!';
+
+    setTimeout(() => {
+      this.mensaje = 'Otro saludo a todos!';
+    }, 3000);
+  }
 
   ngOnInit(): void {
   }
