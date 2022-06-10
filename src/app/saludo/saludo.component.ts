@@ -27,4 +27,8 @@ export class SaludoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  mostrarSaludo(): string {
+    return 'Saludo desde el método';
+  }
+
 }
