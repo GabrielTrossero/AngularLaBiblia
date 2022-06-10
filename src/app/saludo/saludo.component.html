@@ -1,2 +1,8 @@
 <h1>{{ mensaje }}</h1>
 <h2>{{ mostrarSaludo() }}</h2>
+
+<!--Se puede de ambas formas-->
+<p id="prefijo-{{identiParrafo}}">Parrafo con identificador</p>
+<p [id]="identiParrafo">Parrafo con identificador</p>
+
+<input [type]="identiInput">
