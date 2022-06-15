@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'MiPrimeraApp';
+  
+  titulos: string[];
+
+  constructor() {
+    this.titulos = ["Spiderman", "Ironman", "Capitan America"];
+  }
 }
