@@ -3,7 +3,7 @@
 
 <br><br>
 
-<h3>Modulo Alerta (utilizar propiedades)</h3>
+<h3>Modulo Alerta (utilizar propiedades (Input))</h3>
 <!--<app-alerta mensaje="Mensaje 1"></app-alerta> -->
 <app-alerta></app-alerta>
 <app-alerta texto="Mensaje 2" subTitulo="Subtitulo 2"></app-alerta>
@@ -13,4 +13,10 @@
 <!--En este caso utilizo una variable creada en el componente padre, asignandole el valor a las propiedades-->
 <h3>Modulo Alerta (utilizar variables en las propiedades)</h3>
 <app-alerta [texto]="titulos[0]"></app-alerta>
+<app-alerta [texto]="titulos[1]" subTitulo="Subtitulo 2"></app-alerta>
+
+<br><br>
+
+<h3>Modulo Alerta (utilizar propiedades (Output))</h3>
+<app-alerta [texto]="titulos[0]" (alertaPulsada)="onAlertaPulsada($event)"></app-alerta>
 <app-alerta [texto]="titulos[1]" subTitulo="Subtitulo 2"></app-alerta>

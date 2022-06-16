@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-alerta',
@@ -11,12 +11,22 @@ export class AlertaComponent implements OnInit {
   @Input('texto') mensaje: string;
   @Input() subTitulo: string;
 
+  //Los Output son emisores de eventos, toman un evento y lo emiten en el punto que queramos
+  @Output() alertaPulsada: EventEmitter<string>;
+
   constructor() { 
     this.mensaje = "Mensaje por defecto";
     this.subTitulo = "Subtitulo por defecto";
+
+    this.alertaPulsada = new EventEmitter() ;
   }
 
   ngOnInit(): void {
+    console.log(this.mensaje);
+  }
+
+  onClick() {
+    this.alertaPulsada.emit('La alerta ha sido pulsada');
   }
 
 }

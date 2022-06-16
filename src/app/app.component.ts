@@ -12,4 +12,8 @@ export class AppComponent {
   constructor() {
     this.titulos = ["Spiderman", "Ironman", "Capitan America"];
   }
+
+  onAlertaPulsada($event) {
+    console.log($event);
+  }
 }
