@@ -20,3 +20,22 @@
 <h3>Modulo Alerta (utilizar propiedades (Output))</h3>
 <app-alerta [texto]="titulos[0]" (alertaPulsada)="onAlertaPulsada($event)"></app-alerta>
 <app-alerta [texto]="titulos[1]" subTitulo="Subtitulo 2"></app-alerta>
+
+<br><br>
+
+<h3>Two Way Binding</h3>
+<input type="text" [(ngModel)]="campoTexto">
+<p>{{campoTexto}}</p>
+<button (click)="onClick()">Cambia valor variable</button>
+
+<br><br>
+
+<h3>Two Way Binding (Objects)</h3>
+<div>
+    <input type="text" [(ngModel)]="persona.nombre">
+    <br>
+    <input type="text" [(ngModel)]="persona.apellido">
+    <br>
+    <input type="text" [(ngModel)]="persona.edad">
+</div>
+<p>Me llamo {{persona.nombre}} {{persona.apellido}} y tengo {{persona.edad}} años</p>

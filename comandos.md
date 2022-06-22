@@ -2,6 +2,10 @@
 
 Comandos utilizados para en el proyecto
 
+## Inicio
+
+- Podemos configurar para desactivar el modo estricto en el proyecto desde tsconfig.json
+
 ## Comandos
 
 - **npm install -g @angular/cli** -> Instalamos Angular CLI en la PC
